@@ -18,7 +18,7 @@ class Settings:
 
 class Snake:
     def __init__(self):
-        self.image_xianbei = pygame.image.load('images/xianbei.bmp')
+        self.image_joker = pygame.image.load('images/joker.bmp')
         self.image_faiz = pygame.image.load('images/faiz.bmp')
         self.image_up = pygame.image.load('images/head_up.bmp')
         self.image_down = pygame.image.load('images/head_down.bmp')
