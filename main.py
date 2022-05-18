@@ -35,6 +35,8 @@ pygame.display.set_caption('Gluttonous Plus')
 pygame.mixer.init()
 crash_sound = pygame.mixer.Sound('./sound/Tom.wav')
 
+pygame.mixer.music.load('./sound/lawrence.wav')
+pygame.mixer.music.play()
 
 def text_objects(text, font, color=black):#color of button
     text_surface = font.render(text, True, color)
@@ -87,7 +89,7 @@ def initial_interface():
             if event.type == pygame.QUIT:
                 pygame.quit()
 
-        screen.blit(game.snake.image_xianbei,(-140,-230))#background
+        screen.blit(game.snake.image_joker,(-190,0))#background
         message_display('Gluttonous Plus', game.settings.width / 2 * 15, game.settings.height / 4 * 15)
 
         button('Begin!', 340, 800, 160, 80, green, bright_green, game_loop, 'human') #position and width and height and color of button
